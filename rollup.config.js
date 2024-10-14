@@ -1,9 +1,9 @@
-import { Str } from "ziko";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from '@rollup/plugin-commonjs';
 import terser from "@rollup/plugin-terser";
 
 const Addon_name = "ziko-something";
+const NamedExport = "ZikoSomething"
 const Author = "";
 
 const banner = `
@@ -25,7 +25,7 @@ const output = [
   {
     file: `dist/${Addon_name}.js`,
     format: "umd",
-    name: Str.hyphen2pascalcase(Addon_name),
+    name: NamedExport,
     banner,
     exports: "named",
   },
@@ -41,7 +41,7 @@ isProduction &&
     {
       file: `dist/${Addon_name}.min.js`,
       format: "umd",
-      name: Str.hyphen2pascalcase(Addon_name),
+      name: NamedExport,
       banner,
       exports: "named",
       plugins: [

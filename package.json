@@ -1,5 +1,5 @@
 {
-  "name": "ziko-addon_name",
+  "name": "ziko-code",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -12,18 +12,26 @@
   },
   "author": "",
   "keywords": [
+    "ziko",
     "zikojs",
-    "zikojs-addons"
+    "ziko-addons",
+    "codemirror",
+    "jupyter",
+    "notebook"
   ],
   "license": "MIT",
   "dependencies": {
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^4.24.0",
-    "ziko": "^0.0.14"
+    "@codemirror/commands": "^6.7.0",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/view": "^6.34.1",
+    "codemirror": "^6.0.1",
+    "ziko": "^0.0.17"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.0",
-    "cross-env": "^7.0.3"
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "cross-env": "^7.0.3",
+    "rollup": "^4.24.0"
   }
 }

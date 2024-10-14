@@ -1,13 +1,2 @@
-import { text } from "ziko";
-const A=1
-const B=2
-const ZikoSomething = {
-    A,
-    B
-}
-export default ZikoSomething;
-export{
-    A,
-    B,
-    text
-}
+export * from "./code-cell/index.js";
+export * from "./code-note/index.js";

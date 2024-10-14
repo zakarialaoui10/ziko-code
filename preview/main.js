@@ -1,4 +1,5 @@
-import { FileBasedRouting } from "ziko";
-FileBasedRouting(import.meta.glob("./src/pages/**/*.js"))
-// const pages = import.meta.glob("./src/pages/**/*.js")
-// console.log(Object.keys(pages))
+import { CodeInput, CodeNote } from "../src";
+__Ziko__.ExtractAll()
+let a=CodeNote()
+globalThis.a = a
+a.addNote(`text("hello")`)
