@@ -2,8 +2,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from '@rollup/plugin-commonjs';
 import terser from "@rollup/plugin-terser";
 
-const Addon_name = "ziko-something";
-const NamedExport = "ZikoSomething"
+const Addon_name = "ziko-code";
+const NamedExport = "ZikoCode"
 const Author = "";
 
 const banner = `
